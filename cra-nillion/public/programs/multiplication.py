@@ -9,4 +9,4 @@ def nada_main():
 
     new_int = a * b 
 
-    return [Output(new_int, "my_output", party1)]
+    return [Output(new_int, "my_output", party2)]

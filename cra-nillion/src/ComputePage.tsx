@@ -166,7 +166,7 @@ export default function Main() {
               { partyName: partyName2, partyId: partyId2 },
               // { partyName: partyName3, partyId: partyId3 },
             ]}
-            outputParties={[{ partyName: partyName1, partyId: partyId1 }]}
+            outputParties={[{ partyName: partyName2, partyId: partyId2 }]}
             outputName={outputName}
             onComputeProgram={(result) => setComputeResult(result.value)
             }
