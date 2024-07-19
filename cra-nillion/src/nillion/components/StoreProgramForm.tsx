@@ -57,11 +57,11 @@ const StoreProgram: React.FC<StoreProgramProps> = ({
   };
 
   // programs need to have .nada.bin files in public/programs/*
-  const selectProgram = [
+  const selectProgram = defaultProgram
+    ? [{ name: `${defaultProgram}.nada.bin`, value: defaultProgram }]
+    : [
         { name: 'addition_simple.nada.bin', value: 'addition_simple' },
-        { name: 'secret_addition.nada.bin', value: 'secret_addition' },
         { name: 'subtraction_simple.nada.bin', value: 'subtraction_simple' },
-        { name: 'linear_regression_12.nada.bin', value: 'linear_regression_12' },
       ];
 
   useEffect(() => {
